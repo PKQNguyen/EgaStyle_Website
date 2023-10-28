@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900;1000&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    :root {
+        --text-color: #000000;
+        --body-background: #F8F8F8;
+        --text-secondary-color: #666666;
+        --primary-color: #080808;
+        --secondary-color: #292929;
+        --price-color: #155BF6;
+        --subheader-background: #e5677d;
+        --subheader-color: #f9f9f6;
+        --header-category-bg: #a50a06;
+        --header-category-color: #fff3f4;
+        --label-background: #DF0000;
+        --label-color: #ffffff;
+        --footer-bg: #81AACC;
+        --footer-color: #ffffff;
+        --show-loadmore: none!important;
+        --order-loadmore: -1!important;
+        --sale-pop-color: #d82e4d;
+        --addtocart-bg: #155BF6;
+        --addtocart-text-color: #ffffff;
+        --cta-color: #000000;
+        --section-coupon-bg: #155BF6;
+        --coupon-title-color: #155BF6;
+        --coupon-button-color: #155BF6;
+        --col-menu: 4;
+        --border-color: #f1f1f1;
+        --link-color: #2F80ED;
+        --coupon-code-background: #fff;
+        --coupon-lite-border: #155BF6;
+        --product-promotion-bg: #f33828;
+        --policies-bg: #ffffff;
+        --policies-color: #050000;
+        --product-promotion-color: #155BF6;
+
+        --swiper-navigation-size: 15px !important;
+    }
+
+    .close {
+        float: right;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1;
+        color: #000;
+        text-shadow: 0 1px 0 #fff;
+        opacity: .5;
+    }
+
+    body {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        text-align: left;
+        background-color: #fff;
+        }
+    
+}
