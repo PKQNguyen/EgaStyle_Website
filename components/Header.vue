@@ -112,9 +112,22 @@
             <div class="flex justify-end">
                 <div class="grid w-full grid-cols-4 text-2xl text-center" >
                     <span class="flex items-center justify-center"><Icon name="ion:search"></Icon></span>
-                    <div class="relative hidden lg:block">
-                        
+                    <div class="relative hidden lg:block md:block group/btn-login">
+                        <Icon name="ion:person-outline" class="inline-block font-black"></Icon>
+                        <div class="opacity-0 absolute invisible top-[calc(100%+10px)] left-1/2 bg-[#333] py-[5px] px-2 rounded-[5px] text-white text-[12px] translate-x-[-50%] block w-[95px] h-[70px] text-left
+                                    group-hover/btn-login:opacity-100 group-hover/btn-login:visible group-hover/btn-login:bottom-[calc(100%+8px)]
+                                    before:content-[''] before:bg-transparent before:absolute before:h-[10px] before:left-0 before:bottom-full before:w-full
+                                    after:content-[''] after:bg-[#333] after:h-[14px] after:absolute after:w-[14px] after:rotate-45 after:left-[calc(50%-7px)] after:top-[-7px] after:z-[-1]"
+                            style="transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);"
+                        >
+                            <a class="inline-block px-2 outline-none" href="#" title="Đăng nhập">Đăng nhập</a>
+                            <a class="inline-block px-2 outline-none" href="#" title="Đăng ký">Đăng ký</a>
+                        </div>
                     </div>
+                    <a href="#" class="relative text-[22px]">
+                        <Icon name="ion:md-heart-empty" class="align-top"></Icon>
+                        <span class="absolute inline-block bg-[#da3f3f] rounded-full w-5 h-5 leading-[20px] text-white text-[12px] top-[-5px] right-0">2</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -126,5 +139,7 @@
     }
 </style>
 <script>
+import { Icon } from '#build/components';
+
     
 </script>
