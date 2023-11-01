@@ -5,3 +5,5 @@
   </NuxtLayout>
   <Footer></Footer>
 </template>
+<script>
+</script>
