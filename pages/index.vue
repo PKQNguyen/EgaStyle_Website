@@ -327,13 +327,13 @@
                                 <Tab title="Năng động ngày hè">
                                     <div>
                                         <Swiper 
-                                            :modules="Grid"
+                                            :modules="[Grid]"
                                             :watchSlidesProgress="true" :slidesPerView="5" 
                                             :grid="{
-                                                rows: 2,
+                                                row: 2,
                                             }">
-                                            <SwiperSlide v-for="pro in products" :key="pro.id" class="px-[15px] flex xl:basis-1/5 xl:max-w-[20%]">
-                                                <div class="flex" v-if="pro.cate === 'T-Shirt'">
+                                            <SwiperSlide v-for="pro in products" :key="pro.id" class="px-[15px] flex flex-1 xl:basis-1/5 xl:max-w-[20%]">
+                                                <div class="flex">
                                                     <div class="item_product rounded-lg h-full flex flex-col justify-between mt-0 mb-2 lg:text-[16px] lg:mb-[30px] bg-white">
                                                         <form action="/">
                                                             <div class="relative overflow-hidden product-thumbnail group">
@@ -342,12 +342,23 @@
                                                                             before:content-[''] before:block lg:group-hover:scale-95" 
                                                                     :title="`${pro.name}`" style="transition: transform .3s ease-out;">
                                                                     <img src="/products/frame_2.webp" class="product-frame absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] scale-100 object-contain w-auto h-auto max-w-full max-h-full min-w-[1px] min-h-[1px] z-10" alt="">
-                                                                    <img :src="`/products/sale_50/${pro.img_thumbnail}`" 
+                                                                    <img :src="`/products/product-img/shirt/${pro.img_thumbnail}`" v-if="pro.cate === 'Shirt'"
                                                                         class="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] scale-100 
                                                                             object-contain w-auto h-auto max-w-full max-h-full min-w-[1px] min-h-[1px]" 
                                                                         alt="" width="480" height="480"
                                                                     >
-                                                                    <img :src="`/products/sale_50/${pro.img_hover}`" 
+                                                                    <img :src="`/products/product-img/shirt/${pro.img_hover}`" v-if="pro.cate === 'Shirt'"
+                                                                        class="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] scale-100 
+                                                                            object-contain w-auto h-auto max-w-full max-h-full min-w-[1px] min-h-[1px] 
+                                                                            opacity-0 z-[-1] group-hover:opacity-100 group-hover:z-[1]" 
+                                                                        alt="" width="480" height="480"
+                                                                    >
+                                                                    <img :src="`/products/product-img/shorts/${pro.img_thumbnail}`" v-if="pro.cate === 'Short'"
+                                                                        class="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] scale-100 
+                                                                            object-contain w-auto h-auto max-w-full max-h-full min-w-[1px] min-h-[1px]" 
+                                                                        alt="" width="480" height="480"
+                                                                    >
+                                                                    <img :src="`/products/product-img/shorts/${pro.img_hover}`" v-if="pro.cate === 'Short'"
                                                                         class="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] scale-100 
                                                                             object-contain w-auto h-auto max-w-full max-h-full min-w-[1px] min-h-[1px] 
                                                                             opacity-0 z-[-1] group-hover:opacity-100 group-hover:z-[1]" 
@@ -490,13 +501,13 @@
                                 <Tab title="Chào biển nắng mới">
                                     <div>
                                         <Swiper 
-                                            :modules="Grid"
+                                            :module="Grid"
                                             :watchSlidesProgress="true" :slidesPerView="5" 
                                             :grid="{
                                                 rows: 2,
                                             }">
                                             <SwiperSlide v-for="pro in products" :key="pro.id" class="px-[15px] flex xl:basis-1/5 xl:max-w-[20%]">
-                                                <div class="flex" v-if="pro.cate === 'T-Shirt'">
+                                                <div class="flex" >
                                                     <div class="item_product rounded-lg h-full flex flex-col justify-between mt-0 mb-2 lg:text-[16px] lg:mb-[30px] bg-white">
                                                         <form action="/">
                                                             <div class="relative overflow-hidden product-thumbnail group">
@@ -971,13 +982,23 @@ function runCountDown() {
 // runCountDown();
 
 const colorProduct = [
-    {  id: 1, color: 'white', label: 'trắng'  },
-    {  id: 2, color: 'brown', label: 'nâu'  },
-    {  id: 3, color: 'beige', label: 'be'  },
-    {  id: 4, color: 'cream', label: 'kem'  },
-    {  id: 5, color: 'green', label: 'xanh lá'  },
-    {  id: 6, color: 'navy', label: 'navy'  },
-    {  id: 7, color: 'black', label: 'đen'  },
+    {  id: 1, color: 'white', label: 'trắng', cate: 'T-Shirt'  },
+    {  id: 2, color: 'brown', label: 'nâu', cate: 'T-Shirt'  },
+    {  id: 3, color: 'beige', label: 'be', cate: 'T-Shirt'  },
+    {  id: 4, color: 'cream', label: 'kem', cate: 'T-Shirt'  },
+    {  id: 5, color: 'green', label: 'xanh lá', cate: 'T-Shirt'  },
+    {  id: 6, color: 'navy', label: 'navy', cate: 'T-Shirt'  },
+    {  id: 7, color: 'black', label: 'đen', cate: 'T-Shirt'  },
+    {  id: 8, color: 'dark-green', label: 'xanh đậm', cate: 'Shirt'  },
+    {  id: 9, color: 'blue-navy', label: 'xanh navy', cate: 'Shirt'  },
+    {  id: 10, color: 'black', label: 'đen', cate: 'Shirt'  },
+    {  id: 11, color: 'blue', label: 'xanh', cate: 'Shirt'  },
+    {  id: 12, color: 'white', label: 'trắng', cate: 'Shirt'  },
+    {  id: 13, color: 'pink', label: 'hồng', cate: 'Shirt'  },
+    {  id: 14, color: 'beige', label: 'be', cate: 'Shorts'  },
+    {  id: 15, color: 'brown', label: 'nâu', cate: 'Shorts'  },
+    {  id: 16, color: 'grey', label: 'xám', cate: 'Shorts'  },
+    {  id: 17, color: 'black', label: 'đen', cate: 'Shorts'  },
 ];
 
 const products = [ 
@@ -1001,6 +1022,42 @@ const products = [
     },
     {
         id: 'AT-07', brand: 'Khác', cate: 'T-Shirt', name: 'Áo thun nam - Beige', img_thumbnail: 'product-07.webp', img_hover: 'ao_thun-beige.png', price_sale: 599000, price: 1300000, discount: 0.54, size: [ 'S', 'M', 'L', 'XL' ], colors: [ 3 ], quantity: 300, quantity_sale: 285, promo_tag: 2
+    },
+    {
+        id: 'ASM-01', brand: 'Khác', cate: 'Shirt', name: 'Áo sơ mi basic - Dark Green', img_thumbnail: 'product-08.1.webp', img_hover: 'product-08.2.webp', price_sale: 499000, price: 999000, discount: 0.51, size: [ 'S', 'M', 'L', 'XL' ], colors: [ 9, 8 ], quantity: 300, quantity_sale: 285, promo_tag: 2
+    },
+    {
+        id: 'ASM-02', brand: 'Khác', cate: 'Shirt', name: 'Áo sơ mi basic - Navy', img_thumbnail: 'product-09.1.webp', img_hover: 'product-09.2.webp', price_sale: 499000, price: 999000, discount: 0.51, size: [ 'S', 'M', 'L', 'XL' ], colors: [ 9, 8 ], quantity: 300, quantity_sale: 285, promo_tag: 2
+    },
+    {
+        id: 'ASM-03', brand: 'Khác', cate: 'Shirt', name: 'Áo sơ mi basic - Black', img_thumbnail: 'product-19.1.webp', img_hover: 'product-19.2.webp', price_sale: 499000, price: 999000, discount: 0.51, size: [ 'S', 'M', 'L', 'XL' ], colors: [ 10, 11 ], quantity: 300, quantity_sale: 285, promo_tag: 2
+    },
+    {
+        id: 'ASM-04', brand: 'Khác', cate: 'Shirt', name: 'Áo sơ mi basic - Blue', img_thumbnail: 'product-10.1.webp', img_hover: 'product-10.2.webp', price_sale: 499000, price: 999000, discount: 0.51, size: [ 'S', 'M', 'L', 'XL' ], colors: [ 10, 11 ], quantity: 300, quantity_sale: 285, promo_tag: 2
+    },
+    {
+        id: 'ASM-05', brand: 'Khác', cate: 'Shirt', name: 'Áo sơ mi kẻ sọc - Pink', img_thumbnail: 'product-11.1.webp', img_hover: 'product-11.2.webp', price_sale: 499000, price: 999000, discount: 0.51, size: [ 'S', 'M', 'L', 'XL' ], colors: [ 12, 13 ], quantity: 300, quantity_sale: 285, promo_tag: 2
+    },
+    {
+        id: 'ASM-06', brand: 'Khác', cate: 'Shirt', name: 'Áo sơ mi kẻ sọc - White', img_thumbnail: 'product-12.1.webp', img_hover: 'product-12.2.webp', price_sale: 499000, price: 999000, discount: 0.51, size: [ 'S', 'M', 'L', 'XL' ], colors: [ 12, 13 ], quantity: 300, quantity_sale: 285, promo_tag: 2
+    },
+    {
+        id: 'QN-01', brand: 'Khác', cate: 'Shorts', name: 'Quần ngắn nam - Beige', img_thumbnail: 'product-13.1.webp', img_hover: 'product-13.2.webp', price_sale: 479000, price: 789000, discount: 0.40, size: [ 'S', 'M', 'L', 'XL' ], colors: [  ], quantity: 300, quantity_sale: 285, promo_tag: 2
+    },
+    {
+        id: 'QN-02', brand: 'Khác', cate: 'Shorts', name: 'Quần ngắn nam - Black', img_thumbnail: 'product-14.1.webp', img_hover: 'product-14.2.webp', price_sale: 479000, price: 789000, discount: 0.40, size: [ 'S', 'M', 'L', 'XL' ], colors: [  ], quantity: 300, quantity_sale: 285, promo_tag: 2
+    },
+    {
+        id: 'QN-03', brand: 'Khác', cate: 'Shorts', name: 'Quần ngắn nam SUMMER - Beige', img_thumbnail: 'product-15.1.webp', img_hover: 'product-15.2.webp', price_sale: 479000, price: 599000, discount: 0.21, size: [ 'S', 'M', 'L', 'XL' ], colors: [ 14, 15, 16, 17 ], quantity: 300, quantity_sale: 285, promo_tag: 2
+    },
+    {
+        id: 'QN-04', brand: 'Khác', cate: 'Shorts', name: 'Quần ngắn nam SUMMER - Black', img_thumbnail: 'product-16.1.webp', img_hover: 'product-16.2.webp', price_sale: 479000, price: 599000, discount: 0.21, size: [ 'S', 'M', 'L', 'XL' ], colors: [ 14, 15, 16, 17 ], quantity: 300, quantity_sale: 285, promo_tag: 2
+    },
+    {
+        id: 'QN-05', brand: 'Khác', cate: 'Shorts', name: 'Quần ngắn nam SUMMER - Brown', img_thumbnail: 'product-17.1.webp', img_hover: 'product-17.2.webp', price_sale: 479000, price: 599000, discount: 0.21, size: [ 'S', 'M', 'L', 'XL' ], colors: [ 14, 15, 16, 17 ], quantity: 300, quantity_sale: 285, promo_tag: 2
+    },
+    {
+        id: 'QN-06', brand: 'Khác', cate: 'Shorts', name: 'Quần ngắn nam SUMMER - Grey', img_thumbnail: 'product-18.1.webp', img_hover: 'product-18.2.webp', price_sale: 479000, price: 599000, discount: 0.21, size: [ 'S', 'M', 'L', 'XL' ], colors: [ 14, 15, 16, 17 ], quantity: 300, quantity_sale: 285, promo_tag: 2
     },
  ];
 
