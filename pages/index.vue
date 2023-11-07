@@ -327,13 +327,13 @@
                                 <Tab title="Năng động ngày hè">
                                     <div>
                                         <Swiper 
-                                            :modules="[Grid]"
+                                            :modules="Grid"
                                             :watchSlidesProgress="true" :slidesPerView="5" 
                                             :grid="{
                                                 row: 2,
                                             }">
                                             <SwiperSlide v-for="pro in products" :key="pro.id" class="px-[15px] flex flex-1 xl:basis-1/5 xl:max-w-[20%]">
-                                                <div class="flex">
+                                                <div class="flex"  v-if="pro.cate === 'Shirt'">
                                                     <div class="item_product rounded-lg h-full flex flex-col justify-between mt-0 mb-2 lg:text-[16px] lg:mb-[30px] bg-white">
                                                         <form action="/">
                                                             <div class="relative overflow-hidden product-thumbnail group">

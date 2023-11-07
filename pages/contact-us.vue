@@ -62,7 +62,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="lg:basis-1/2 lg:max-w-[50%] px-[15px] flex"></div>
+                <div class="lg:basis-1/2 lg:max-w-[50%] px-[15px] flex">
+                    <div id="map" class="relative w-full h-full overflow-hidden">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.842949738566!2d105.75038727459496!3d10.029815672521869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a08830e54e5f25%3A0xd7d159025caa8609!2zxJAuIE5ndXnhu4VuIFbEg24gTGluaCwgTmluaCBLaeG7gXUsIEPhuqduIFRoxqEsIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1697089835819!5m2!1sen!2s" width="600" style="border:0; width: 100%; height: 100%; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

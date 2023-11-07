@@ -1,0 +1,83 @@
+<template>
+    <section class="mb-4 mt-2 bg-[#f6f6f6] text-[#999] block">
+        <span class="text-[14px] font-normal"></span>
+        <div class="px-[15px] xl:max-w-[1230px] m-auto">
+            <div class="mx-[-15px] flex flex-wrap">
+                <div class="px-[15px] flex basis-full max-w-full">
+                    <ul class="flex flex-wrap m-0 px-0 py-1 bg-[#f6f6f6]">
+                        <li>
+                            <a href="/index" class="text-[--link-color]"><span class="font-normal text-[14px]">Trang chủ</span></a>
+                            <span class="font-normal text-[14px]"> &nbsp; / &nbsp;</span>
+                        </li>
+                        <li>
+                            <a href="/index" class="text-[--link-color]"><span class="font-normal text-[14px]">Tài khoản</span></a>
+                            <span class="font-normal text-[14px]"> &nbsp; / &nbsp;</span>
+                        </li>
+                        <li class="active">
+                            <span class="font-normal text-[14px]">Đăng ký</span>
+                            <span class="font-normal text-[14px]">&nbsp; / &nbsp;</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container relative flex flex-col py-5 mb-5">
+            <div class="page_login">
+                <div class="text-center heading-bar">
+                    <h1 class="mb-0 py-[10px] font-normal text-[25px] leading-tight uppercase">ĐĂNG KÝ TÀI KHOẢN</h1>
+                    <p class="mb-0">
+                        Bạn đã có tài khoản ?  Đăng nhập 
+                        <NuxtLink to="/account/sign-in" class="underline text-[#2F80ED]">tại đây</NuxtLink>
+                    </p>
+                </div>
+                <div class="mx-[-15px] flex flex-wrap">
+                    <div class="py-4 mx-auto lg:basis-1/3 md:basis-3/12">
+                        <div class="page-register">
+                            <div class="register">
+                                <h2 class="text-center uppercase text-[18px] mb-5">THÔNG TIN CÁ NHÂN</h2>
+                                <form action="/">
+                                    <div class="form-signup">
+                                        <fieldset class="mb-0 form-group">
+                                            <label class="mb-2 inline-block mt-0 font-semibold text-[14px]">Họ: <span class="text-[#f00]">*</span></label>
+                                            <input type="text" class="form-control" name="last_name" id="customer_last_name" placeholder="Họ" required>
+                                        </fieldset>
+                                        <fieldset class="mb-0 form-group">
+                                            <label class="mb-2 inline-block mt-0 font-semibold text-[14px]">Tên: <span class="text-[#f00]">*</span></label>
+                                            <input type="text" class="form-control" name="first_name" id="customer_first_name" placeholder="Tên" required>
+                                        </fieldset>
+                                        <fieldset class="mb-0 form-group">
+                                            <label class="mb-2 inline-block mt-0 font-semibold text-[14px]">Số điện thoại: <span class="text-[#f00]">*</span></label>
+                                            <input type="text" class="form-control" name="number_phone" id="customer_number_phone" placeholder="Số điện thoại" required>
+                                        </fieldset>
+                                        <fieldset class="mb-0 form-group">
+                                            <label class="mb-2 inline-block mt-0 font-semibold text-[14px]">Email: <span class="text-[#f00]">*</span></label>
+                                            <input type="email" class="form-control" name="email" id="customer_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" placeholder="Email" required>
+                                        </fieldset>
+                                        <fieldset class="mb-4 form-group">
+                                            <label class="mb-2 inline-block mt-0 font-semibold text-[14px]">Mật khẩu: <span class="text-[#f00]">*</span></label>
+                                            <input type="password" class="form-control" name="password" id="customer_password" placeholder="Mật khẩu" required>
+                                        </fieldset>
+                                        <div class="mb-4">
+                                            <button class="relative w-full rounded-md btn btn-login" value="Đăng nhập">Đăng ký</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="float-left w-full mt-5 text-center">
+                <p class="text-[#6c757d]">Hoặc đăng nhập bằng</p>
+            </div>
+        </div>
+    </section>
+</template>
+<style>
+
+</style>
+<script setup>
+
+</script>

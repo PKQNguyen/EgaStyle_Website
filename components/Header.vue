@@ -24,7 +24,7 @@
                 <div class="overflow-hidden max-h-[65px]">
                     <nav>
                         <ul class=" h-[313px] min-h-full max-w-full w-full overflow-x-hidden flex flex-row flex-wrap rounded-none">
-                            <li class="p-0 bg-transparent border-b-0 border-x-0 menu-item" :class="{'translate-y-[-100%]':menuStatus}">
+                            <li class="p-0 bg-transparent border-b-0 border-x-0 menu-item" :class="{'translate-y-[-100%]': menuStatus}">
                                 <a href="/" 
                                 class=" no-underline whitespace-nowrap flex items-center py-5 px-[15px] relative hover:text-[--primary-color]
                                     after:contents-['*']  after:h-[2px] after:w-0 after:overflow-hidden after:absolute left-4 after:bottom-[15px] after:bg-black after:transition-[width] ease-in-out duration-1000
@@ -32,7 +32,7 @@
                                     <span>Trang chủ</span>
                                 </a>
                             </li>
-                            <li class="p-0 bg-transparent border-b-0 border-x-0 menu-item" :class="{'translate-y-[-100%]':menuStatus}">
+                            <li class="p-0 bg-transparent border-b-0 border-x-0 menu-item" :class="{'translate-y-[-100%]': menuStatus}">
                                 <NuxtLink to="/" 
                                 class="no-underline whitespace-nowrap flex items-center py-5 px-[15px] relative
                                     peer/btn-mega-menu hover:text-[--primary-color]
@@ -121,7 +121,7 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="p-0 bg-transparent border-b-0 border-x-0 menu-item" :class="{'translate-y-[-100%]':menuStatus}">
+                            <li class="p-0 bg-transparent border-b-0 border-x-0 menu-item" :class="{'translate-y-[-100%]': menuStatus}">
                                 <a href="#" 
                                 class="no-underline whitespace-nowrap flex items-center py-5 px-[15px] relative hover:text-[--primary-color] peer/btn-page
                                     after:contents-['*']  after:h-[2px] after:w-0 after:overflow-hidden after:absolute left-4 after:bottom-[15px] after:bg-black after:transition-[width] ease-in-out duration-1000
@@ -141,7 +141,7 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="p-0 bg-transparent border-b-0 border-x-0 menu-item" :class="{'translate-y-[-100%]':menuStatus}">
+                            <li class="p-0 bg-transparent border-b-0 border-x-0 menu-item" :class="{'translate-y-[-100%]': menuStatus}">
                                 <NuxtLink to="/shop-list" 
                                 class=" no-underline whitespace-nowrap flex items-center py-5 px-[15px] relative hover:text-[--primary-color]
                                     after:contents-['*']  after:h-[2px] after:w-0 after:overflow-hidden after:absolute left-4 after:bottom-[15px] after:bg-black after:transition-[width] ease-in-out duration-1000
@@ -149,7 +149,7 @@
                                     <span>Hệ thống cửa hàng</span>
                                 </NuxtLink>
                             </li>
-                            <li class="p-0 bg-transparent border-b-0 border-x-0 menu-item" :class="{'translate-y-[-100%]':menuStatus}">
+                            <li class="p-0 bg-transparent border-b-0 border-x-0 menu-item" :class="{'translate-y-[-100%]': menuStatus}">
                                 <NuxtLink to="/about-us" 
                                 class=" no-underline whitespace-nowrap flex items-center py-5 px-[15px] relative hover:text-[--primary-color]
                                     after:contents-['*']  after:h-[2px] after:w-0 after:overflow-hidden after:absolute left-4 after:bottom-[15px] after:bg-black after:transition-[width] ease-in-out duration-1000
@@ -157,7 +157,7 @@
                                     <span>Giới thiệu</span>
                                 </NuxtLink>
                             </li>
-                            <li class="p-0 bg-transparent border-b-0 border-x-0 menu-item" :class="{'translate-y-[-100%]':menuStatus}">
+                            <li class="p-0 bg-transparent border-b-0 border-x-0 menu-item" :class="{'translate-y-[-100%]': menuStatus}">
                                 <NuxtLink to="/news" 
                                 class=" no-underline whitespace-nowrap flex items-center py-5 px-[15px] relative hover:text-[--primary-color]
                                     after:contents-['*']  after:h-[2px] after:w-0 after:overflow-hidden after:absolute left-4 after:bottom-[15px] after:bg-black after:transition-[width] ease-in-out duration-1000
@@ -165,7 +165,7 @@
                                     <span>Tin tức</span>
                                 </NuxtLink>
                             </li>
-                            <li class="p-0 bg-transparent border-b-0 border-x-0 menu-item" :class="{'translate-y-[-100%]':menuStatus}">
+                            <li class="p-0 bg-transparent border-b-0 border-x-0 menu-item" :class="{'translate-y-[-100%]': menuStatus}">
                                 <NuxtLink to="/contact-us" 
                                 class=" no-underline whitespace-nowrap flex items-center py-5 px-[15px] relative hover:text-[--primary-color]
                                     after:contents-['*']  after:h-[2px] after:w-0 after:overflow-hidden after:absolute left-4 after:bottom-[15px] after:bg-black after:transition-[width] ease-in-out duration-1000
@@ -173,7 +173,7 @@
                                     <span>Liên hệ</span>
                                 </NuxtLink>
                             </li>
-                            <li class="p-0 bg-transparent border-b-0 border-x-0 menu-item" :class="{'translate-y-[-100%]':menuStatus}">
+                            <li class="p-0 bg-transparent border-b-0 border-x-0 menu-item" :class="{'translate-y-[-100%]': menuStatus}">
                                 <a href="#" 
                                 class=" no-underline whitespace-nowrap flex items-center py-5 px-[15px] relative hover:text-[--primary-color]
                                     after:contents-['*']  after:h-[2px] after:w-0 after:overflow-hidden after:absolute left-4 after:bottom-[15px] after:bg-black after:transition-[width] ease-in-out duration-1000
@@ -185,8 +185,8 @@
                     </nav>
                 </div>
                 <div class="flex items-center">
-                    <i class="flex items-center justify-center w-10 h-10 cursor-pointer hover:bg-gray-100 hover:rounded-full" @click="changeMenu(false)"><Icon name="ion:chevron-left" class="font-black text-[22px]"/></i>
-                    <i class="flex items-center justify-center w-10 h-10 cursor-pointer hover:bg-gray-100 hover:rounded-full" @click="changeMenu(true)"><Icon name="ion:chevron-right" class="font-black text-[22px]"/></i>
+                    <button class="flex items-center justify-center w-10 h-10 cursor-pointer hover:bg-gray-100 hover:rounded-full" :class="{'disabled': !menuStatus}" @click="changeMenu()"><Icon name="ion:chevron-left" class="font-black text-[22px]"/></button>
+                    <button class="flex items-center justify-center w-10 h-10 cursor-pointer hover:bg-gray-100 hover:rounded-full" :class="{'disabled': menuStatus}" @click="changeMenu()"><Icon name="ion:chevron-right" class="font-black text-[22px]"/></button>
                 </div>
             </div>
             <div class="flex justify-end">
@@ -200,8 +200,8 @@
                                     after:content-[''] after:bg-[#333] after:h-[14px] after:absolute after:w-[14px] after:rotate-45 after:left-[calc(50%-7px)] after:top-[-7px] after:z-[-1]"
                             style="transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);"
                         >
-                            <a class="inline-block px-2 outline-none" href="#" title="Đăng nhập">Đăng nhập</a>
-                            <a class="inline-block px-2 outline-none" href="#" title="Đăng ký">Đăng ký</a>
+                            <NuxtLink to="/account/sign-in" class="inline-block px-2 outline-none" title="Đăng nhập">Đăng nhập</NuxtLink>
+                            <NuxtLink to="/account/sign-up" class="inline-block px-2 outline-none" title="Đăng ký">Đăng ký</NuxtLink>
                         </div>
                     </div>
                     <a href="#" class="relative text-[22px]">
@@ -234,12 +234,17 @@
     .menu-item:hover > .menu-item__link::after {
         width: calc(100% - 30px);
     }
+
+    button.disabled {
+        cursor: not-allowed;
+    }
 </style>
 <script setup>
-var menuStatus = false; 
+import { ref } from 'vue';
+var menuStatus = ref(true); 
 
-function changeMenu(status) {
-    menuStatus = status;
+function changeMenu() {
+    menuStatus.value = !menuStatus.value;
 }
 
 const menu = [
